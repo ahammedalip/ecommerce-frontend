@@ -2,7 +2,7 @@ import './Home.css'
 import React from 'react'
 
 import image1 from '../../public/images/15.jpg'
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 
 
@@ -26,10 +26,11 @@ export default function Home() {
 
                 <div>
                     <Link to='/userProducts'
-                        className="bg-black text-white rounded-full text-lg font-semibold p-3  shadow-md hover:bg-gray-800 animate-bounce"
+                        className="bg-black text-white rounded-full text-lg font-semibold p-3 shadow-md hover:bg-gray-800 animate-bounce"
                     >
                         Shop Now
                     </Link>
+
                 </div>
             </div>
             <div className='bg-black h-7'>

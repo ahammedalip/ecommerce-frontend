@@ -14,7 +14,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const admin = useSelector((state) => state.admin);
   const adminToken = Cookies.get('authToken');
-  const userToken = Cookies.get('userAuthToken')
+
   const [menuOpen, setMenuOpen] = useState(false);
 
 
@@ -26,13 +26,7 @@ const Navbar = () => {
     toast.success('Logged Out successfully')
     navigate('/admin/login');
   };
-  const handleUserLogout = () => {
-    dispatch(clearAdminDetails());
-    Cookies.remove('userAuthToken');
-    localStorage.removeItem('name')
-    toast.success('Logged Out successfully')
-    navigate('/user/login');
-  };
+
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -41,8 +35,10 @@ const Navbar = () => {
   return (
     <nav className="bg-white text-gray-700 p-4 shadow-md fixed w-full ">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-extralight flex items-center">
-          <FaCircleNodes className="mr-2" />
+        <div className="text-2xl font-mono flex items-center">
+          <Link to='http://localhost:5173/' >
+            <FaCircleNodes className="mr-2" />
+          </Link>
           GoShoppy
         </div>
 

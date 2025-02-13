@@ -10,3 +10,10 @@
   .animate-bounce {
     animation: bounce 1s infinite; /* Apply the animation with a duration of 1 second and infinite looping */
   }
+  button.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+.link-bounce {
+    animation: bounce 1s infinite;
+}
