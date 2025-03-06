@@ -5,9 +5,9 @@ import { getStorage } from "firebase/storage";
 
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBmsw1ijPlw7hazZQ7pmcB9qph6dJBF8hw",
+  // apiKey: "AIzaSyBmsw1ijPlw7hazZQ7pmcB9qph6dJBF8hw",
   authDomain: "penpulse-a70eb.firebaseapp.com",
   projectId: "penpulse-a70eb",
   storageBucket: "penpulse-a70eb.appspot.com",
